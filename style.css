@@ -1,0 +1,208 @@
+[class*="col-"] {
+    float: left;
+  }
+  
+  @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {width: 6.25%;}
+        .col-2 {width: 12.5%;}
+        .col-3 {width: 18.75%;}
+        .col-4 {width: 25%;}
+        .col-5 {width: 31.25%;}
+        .col-6 {width: 37.5%;}
+        .col-7 {width: 43.75%;}
+        .col-8 {width: 50%;}
+        .col-9 {width: 56.25%;}
+        .col-10 {width: 62.5%;}
+        .col-11 {width: 68.75%;}
+        .col-12 {width: 75%;}
+        .col-13 {width: 81.25%;}
+        .col-14 {width: 87.5%;}
+        .col-15 {width: 93.75%;}
+        .col-16 {width: 100%;}
+
+    header {
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+    
+    footer {
+        background-color: #333;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .footer, .header{
+      display: none;
+    }
+
+    article {
+      margin-top: 95px;
+      margin-bottom: 60px;
+    }
+
+    #hidden {
+      display: none;
+    }
+
+    h2 ~ p {
+      padding: 0 5%;
+    }
+
+    .profil{
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .poster img {
+      width: 100%;
+    }
+
+    .poster table.line{
+      border: 1px solid #888888;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+    }
+
+    th, tr, td {
+      border: 2px solid #888888;
+      background-color: #333;
+    }
+
+    p ~ ul {
+      margin-left: 5%;
+    }
+
+    .mobile {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .header {
+        background-color: #333;
+        position: static;
+        padding: 0.1px;
+    }
+    
+    .footer {
+        background-color: #333;
+        text-align: center;
+        position: static;
+        padding: 20px;
+    }
+    
+    footer, header {
+      display: none;
+    }
+
+    #hidden {
+      display: block;
+      background-color: #338833;
+      margin-bottom: 40px;
+      padding-bottom: 10px;
+    }
+    
+    p#show {
+      display: none;
+    }
+
+    img, h1 ~ p {
+      margin: 0 5%;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    ul {
+      margin: 5%;
+    }
+    
+    div.poster table {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #008800;
+      font-size: 30px;
+    }
+
+    th, tr, td {
+      border: 2px solid #888888;
+      background-color: #333;
+    }
+
+    p ~ ul {
+      margin-left: 5.5%;
+    }
+
+    .pc {
+      display: none;
+    }
+
+    div[class*="col-"] , section[class*="col-"]{
+      background-color: #008800;
+    }
+  }
+
+p#show {
+    background-color: #008800;
+    padding: 25px;
+    margin: 0;
+}
+
+p.no-deco, p.no-deco a {
+    text-decoration: none;
+    color: white;
+}
+
+table.line{
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+div ul li {
+    text-align: justify;
+}
+
+li.big {
+  font-size: 20px;
+}
+
+figcaption {
+  margin-top: 5px;
+}
+
+.warning {
+  color: red;
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+}
